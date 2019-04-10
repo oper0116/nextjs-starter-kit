@@ -2,19 +2,26 @@
   "name": "mongoose-dev1",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./src/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "nodemon --inspect app.js"
+    "server": "nodemon --exec babel-node --inspect ./src/server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "apollo-server": "^2.4.8",
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
+    "graphql-yoga": "^1.17.4",
     "mongoose": "^5.4.22"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
     "nodemon": "^1.18.10"
   }
 }
